@@ -27,6 +27,17 @@
                 </dict>
             </array>
         </config-file>
+        <config-file target="*-Info.plist" parent="UIBackgroundModes">
+            <array>
+                <string>fetch</string>
+                <string>remote-notification</string>
+            </array>
+        </config-file>
+        <config-file target="*-Info.plist" parent="UIRequiredDeviceCapabilities">
+            <array>
+                <string>location-services</string>
+            </array>
+        </config-file>
 
         <source-file src="src/ios/BecoCordovaPlugin.m" />
 
